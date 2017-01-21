@@ -1,51 +1,27 @@
-
-function getFormInput(form) {
-  var getNum=document.myPingPongForm.inputField1.value;
-
-  var boolRunCode = true;
-  var num1;
-  var cleanInput;
-  var myArray = [];
-
-  while (boolRunCode === true) {
-    num1 = getInput();
-    cleanInput = checkInput(num1); // NOTE: num1 is the Argument--the actual value that's being passed to the function
-
-    while (cleanInput !== true) {
-      num1 = getInput();
-      cleanInput = checkInput(num1);
-    }
-    myArray = initializeArray(num1);
-    document.myPingPongForm.append(myArray);
-    alert("MY ARRAY:" + myArray);
-    boolRunCode = false;
-  }
-
-
-}
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+//
+// function getFormInput(form) {
+//   var getNum=document.myPingPongForm.inputField1.value;
+//
+//   var boolRunCode = true;
+//   var num1;
+//   var cleanInput;
+//   var myArray = [];
+//
+//   while (boolRunCode === true) {
+//     num1 = getInput();
+//     cleanInput = checkInput(num1); //NOTE: num1 is the Argument--the actual value that's being passed to the function
+//
+//     while (cleanInput !== true) {
+//       num1 = getInput();
+//       cleanInput = checkInput(num1);
+//     }
+//     myArray = initializeArray(num1);
+//     document.myPingPongForm.append(myArray);
+//     alert("MY ARRAY:" + myArray);
+//     boolRunCode = false;
+//   }
+//
+// }
 
 var getInput = function() {
   num1 = prompt("How high do you want to go?");
@@ -70,20 +46,20 @@ var initializeArray = function (endNum) {
 };
 
 
-// var boolRunCode = true;
-// var num1;
-// var cleanInput;
-// var myArray = [];
-//
-// while (boolRunCode === true) {
-//   num1 = getInput();
-//   cleanInput = checkInput(num1); // NOTE: num1 is the Argument--the actual value that's being passed to the function
-//
-//   while (cleanInput !== true) {
-//     num1 = getInput();
-//     cleanInput = checkInput(num1);
-//   }
-//   myArray = initializeArray(num1);
-//   alert("MY ARRAY:" + myArray);
-//   boolRunCode = false;
-// }
+var boolRunCode = true;
+var num1;
+var cleanInput;
+var myArray = [];
+
+while (boolRunCode === true) {
+  num1 = getInput();
+  cleanInput = checkInput(num1); // NOTE: num1 is the Argument--the actual value that's being passed to the function
+
+  while (cleanInput !== true) {
+    num1 = getInput();
+    cleanInput = checkInput(num1);
+  }
+  myArray = initializeArray(num1);
+  alert("MY ARRAY:" + myArray);
+  boolRunCode = false;
+}
