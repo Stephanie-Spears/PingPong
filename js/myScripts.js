@@ -3,8 +3,8 @@ var getInput = function() {
   return num1;
 };
 
-var checkInput = function() {
-  if (isNaN(num1)) {
+var checkInput = function(someNum) { // NOTE: someNum is the parameter--it's a variable declared in the definition of a function--FOR REUSABILITY WITH OTHER VARIABLES I WANT TO PASS IN?
+  if (isNaN(someNum)) {
     alert("Must input numbers only");
     return false;
   }
@@ -13,10 +13,9 @@ var checkInput = function() {
     return true;
   }
 };
-// NOTE: DO I NEED TO RENAME THE PASSED IN ARGUMENTS? OR PARAMETERS, I FORGET WHICH IS WHICH
 var initializeArray = function (endNum) {
   for (var i = 0; i < endNum; i++) {
-    myArray[i] = [i]; // NOTE: is myArray global? why doesn't it have to be passed in?
+    myArray[i] = [i];
     alert("initializing array: " + myArray[i] + "[" + i + "]");
   }
   return myArray;
@@ -30,7 +29,7 @@ var myArray = [];
 
 while (boolRunCode === true) {
   num1 = getInput();
-  cleanInput = checkInput(num1);
+  cleanInput = checkInput(num1); // NOTE: num1 is the Argument--the actual value that's being passed to the function
 
   while (cleanInput !== true) {
     num1 = getInput();
