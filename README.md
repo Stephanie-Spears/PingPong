@@ -33,7 +33,7 @@ Project demonstrates understanding of this week's concepts. If prompted, you are
 ## Setup/Installation Requirements
 
 
-* _Clone this repository (or click the link above)_
+* _Clone this repository_
 * _Open html page 'index.html' in browser_
 
 
