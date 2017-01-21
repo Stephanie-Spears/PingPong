@@ -1,4 +1,4 @@
-* {
+/** {
   box-sizing: border-box;
   border-radius: 10px;
 }
@@ -35,7 +35,6 @@ div.header, div.footer {
 }
 
 footer {
-  /*background-image: url("../img/stock-image.jpg");*/
   border: 3px solid #f5ffa0;
 }
 html {
@@ -43,19 +42,28 @@ html {
   min-height: 100%;
 }
 body {
-  /* Margin bottom by footer height */
   margin-bottom: 60px;
 }
 .footer {
   position: absolute;
   bottom: 0;
   width: 100%;
-  /* Set the fixed height of the footer here */
   height: 60px;
   background-color: #f5f5f5;
   text-align: center;
-}
+}*/
 
-.rulesPingPong {
+/*.rulesPingPong {
   color: white;
+}*/
+
+/*:required {
+  color: purple;
+  background: green;
+  text-align: center;
 }
+:valid {
+  background-color: blue;
+  color: yellow;
+
+}*/

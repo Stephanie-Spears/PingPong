@@ -8,6 +8,29 @@
 //   return num1;
 // }
 
+// function validateForm() {
+//     var num1 = document.forms["myForm"]["fname"].value; //document-html, forms[index(gets the id of the first "form" element in a document)]
+//     if (num1 == "") {
+//         alert("This section must be filled out");
+//         return false;
+//     }
+//
+// }
+function myFunction() {
+    var x, text;
+
+    // Get the value of the input field with id="numb"
+    x = document.getElementById("numb").value;
+
+    // If x is Not a Number or less than one or greater than 10
+    if (isNaN(x) || x < 1 || x > 10) {
+        text = "Input not valid";
+    } else {
+        text = "Input OK";
+    }
+    document.getElementById("demo").innerHTML = text;
+}
+
 
 var getInput = function() {
   num1 = prompt("How high do you want to go?");
@@ -30,6 +53,11 @@ var initializeArray = function (endNum) {
   }
   return myArray;
 };
+
+// NOTE forgot to do the three functions!
+//Numbers divisible by 3 are replaced with "ping"
+//Numbers divisible by 5 are replaced with "pong"
+//Numbers divisible by 15 are replaced with "ping-pong"
 
 
 var boolRunCode = true;
