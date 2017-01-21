@@ -7,17 +7,18 @@ var userInputArray = getInput();
 var num1= userInputArray[0];
 var myArray = [];
 
-alert(myArray);
 
 var displayNum = function (num1) {
   for (var i = 0; i < num1; i++) {
-    myArray = [i];
-    alert(myArray[i]);
+    myArray[i] = [i];
+    alert("inside for loop: " + myArray[i]);
   }
   return myArray;
 };
 
-alert(myArray);
+displayNum(num1);
+
+alert("outside loop: " + myArray);
 // var displayNum = [
 //   function (num1) {for (var i = 0; i < num1; i++) {
 //     var myArray = [i];
@@ -33,17 +34,10 @@ alert(myArray);
 function checkInput(userInputArray) {
   for (var i = 0; i < userInputArray.length; i++) {
     if (isNaN(userInputArray[i])) {
-      alert("RAY SAYS user input of '" + userInputArray[i] + "[" + i + "]" + "' is NOT A NUMBER");
+      alert("user input of '" + userInputArray[i] + "[" + i + "]" + "' is Not a Number");
       return false;
     }
-    else if (i === 0) {
-      if (lowRange > userInputArray[i] || userInputArray[i] > highRange) {
-        alert("RAY SAYS 'YA RETAAAD'ED OR SOMTHIN??" + "...and he says user input of '" + userInputArray[i] + "' is not within options range of " + lowRange + " and " + highRange);
-        return false;
-      }
-    }
     else if (i === (userInputArray.length - 1)) {
-      // alert("Each item in the array has been validated");
       return true;
     }
   }
@@ -53,24 +47,21 @@ var cleanInput = checkInput(userInputArray);
 
 while (cleanInput === false) {
   alert("invalid choice. TRY AGAIN!");
-
   var userInputArray = getInput();
-  var num1= userInputArray[1];
-  var num2= userInputArray[2];
-  var userChoice = userInputArray[0];
+  var num1= userInputArray[0];
   var cleanInput = checkInput(userInputArray);
 }
 if(cleanInput === true) {
-  // alert("User input has been validated");
+  alert("User input has been validated");
+  alert("cleanInput Array: " + myArray);
 }
-var calcSymb = ["+", "-", "/", "*"];
 
-var displayCalcOperation = function (num1, num2) {
-  var numValue;
-  alert(num1 + calcSymb[userChoice-1] + num2 + " = " + (numValue = calculateNum[userChoice-1](num1, num2)));
-};
-
-displayCalcOperation(num1, num2);
+// var displayCalcOperation = function (num1, num2) {
+//   var numValue;
+//   alert(num1 + calcSymb[userChoice-1] + num2 + " = " + (numValue = calculateNum[userChoice-1](num1, num2)));
+// };
+//
+// displayCalcOperation(num1, num2);
 
 $(function() {
     $( "#button1" ).click(function() {
