@@ -1,9 +1,19 @@
+// function othername() {
+//   var input = document.getElementById("userInput").value;
+//   alert(input);
+// }
+
+// function getInput() {
+//   var num1 = document.getElementById("num1").value;
+//   return num1;
+// }
+
+
 var getInput = function() {
   num1 = prompt("How high do you want to go?");
   return num1;
 };
-
-var checkInput = function(someNum) { // NOTE: someNum is the parameter--it's a variable declared in the definition of a function--FOR REUSABILITY WITH OTHER VARIABLES I WANT TO PASS IN?
+var checkInput = function(someNum) { // NOTE: someNum is the parameter--it's a variable declared in the definition of a function--FOR REUSABILITY WITH OTHER VARIABLES I WANT TO PASS IN...
   if (isNaN(someNum)) {
     alert("Must input numbers only");
     return false;
@@ -16,7 +26,7 @@ var checkInput = function(someNum) { // NOTE: someNum is the parameter--it's a v
 var initializeArray = function (endNum) {
   for (var i = 0; i < endNum; i++) {
     myArray[i] = [i];
-    alert("initializing array: " + myArray[i] + "[" + i + "]");
+    // alert("initializing array: " + myArray[i] + "[" + i + "]");
   }
   return myArray;
 };
