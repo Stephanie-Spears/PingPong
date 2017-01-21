@@ -1,38 +1,55 @@
+* {
+  box-sizing: border-box;
+  border-radius: 10px;
+
+}
+
+
 * :hover {
-  border: 2px solid purple;
+  border: 2px solid green;
+  font-family: creepster;
 }
 
 body {
-  font-family: 'Montserrat', sans-serif;
+  font-family: 'Fredoka One', sans-serif;
   background-color: gray;
 }
 
 
 #pong1, #pong2, #pong3, #pong4, .pingPong{
-  /*display: none;*/
+  display: none;
   margin: auto;
 }
 
 
 h1 {
+  font-family: 'Bungee Shade', sans-serif;
   text-align: center;
   text-shadow: 5px 6px 10px #00FF00;
   font-size: 5em;
+  -webkit-transition: width 2s, height 4s;
+  transition: width 2s, height 4s;
+}
+
+h1 :hover {
+  font-family: 'Creepster', sans-serif;
+  width: 500px;
+  height: 500px;
+  transition-timing-function: ease-in-out;
 }
 
 h2 {
   color: white;
   text-align: center;
   font-size: 2em;
-  padding-top: 1.5em;
 }
 
-/*img {
+img {
   display: block;
   margin: auto;
   padding-top: 1.5em;
   max-width: 500px;
-
+}
 
 form {
   padding-bottom: 3em;
@@ -41,14 +58,9 @@ form {
 a {
   color: #ffffff;
 }
-}*/
-
-
-
-/*
 
 a:hover {
-  color: #8c8c8c;
+  color: red;
 }
 
 .jumbotron {
@@ -65,7 +77,6 @@ a:hover {
 
 .section {
   background-color: rgba(255, 255, 255, 0.7);
-  padding: 2em 2em 2em 2em;
   border-radius: 25px;
   margin-top: 2em;
 }
@@ -76,18 +87,14 @@ a:hover {
 }
 
 #rules {
-  margin-top: 2em;
+
 }
 
-#player1, #player2, #player3, #player4, .help-block, .ping-pong {
-  display: none;
-  margin: auto;
-}
 
 #back-link {
   padding-top: 2em;
   text-align: center;
-}*/
+}
 
 
 
