@@ -30,13 +30,12 @@
           <h2 class="pingPong"><em>Oh!</em></h2>
         </div>
         <div class="col-sm-6">
-          <div class="box">
-
+          <!-- <div class="box"> -->
             <img class="img-responsive" id="pong1" src="img/pong1.jpg">
             <img class="img-responsive" id="pong2" src="img/pong2.jpg">
             <img class="img-responsive" id="pong3" src="img/pong3.jpg">
             <img class="img-responsive" id="pong4" src="img/pong4.jpg">
-          </div>
+          <!-- </div> -->
         </div>
         <div class="col-sm-3">
           <h2 class="pingPong"><em>Grr!</em></h2>
@@ -50,7 +49,7 @@
           <div class="form-group" id="inputForm">
             <input class="form-control" id="input" type="number" min="1" max="100" placeholder="Enter a number between 1 and 100: " required>
           </div>
-          <button class="btn btn-primary" type="submit">Ping-pong!</button>
+          <button class="btn btn-primary" type="submit" onclick="getFormInput()">Ping-pong!</button>
           <button class="btn btn-danger" id="reset" type="reset" name="button">Reset</button>
         </form>
         <div class="results well">
