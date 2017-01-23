@@ -71,7 +71,7 @@ $(document).ready(function(){
     num1 = parseInt($("#input").val());
     getFormInput(num1);
     // mutateArrayFunction(getFormInput(num1));
-    // $("#output").text(mutatedArray);
+    $("#output").text(mutatedArray);
   });
 });
 
