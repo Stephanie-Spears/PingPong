@@ -10,14 +10,14 @@
 
 _Create a web application that takes a number from a user and returns a range of numbers from 1 to the chosen number with the following exceptions:_
 
-_Numbers divisible by 3 are replaced with "ping"_
-_Numbers divisible by 5 are replaced with "pong"_
-_Numbers divisible by 15 are replaced with "ping-pong"_
-_A user should be able to enter a new number and see new results over and over again._
+_*Numbers divisible by 3 are replaced with "ping"*_
+_**Numbers divisible by 5 are replaced with "pong"**_
+* _Numbers divisible by 15 are replaced with "ping-pong"_
+* _A user should be able to enter a new number and see new results over and over again._
 
 _Break the program down into simple, individual behaviors with input/output examples. Begin with the simplest possible behavior. List these behaviors (also known as "specs" or "specifications") in the project's README.md file._
 
-_Your code will be reviewed for the following objectives:_
+_**Your code will be reviewed for the following objectives:**_
 
 _JavaScript business logic and user interface logic are separate._
 _Variable names are descriptive and use lower camel case (e.g. myVariableExample)._
