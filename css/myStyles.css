@@ -5,10 +5,9 @@
 }
 
 
-* :hover {
+/** :hover {
   border: 2px solid green;
-  /*font-family: 'Creepster';*/
-}
+}*/
 
 body {
   font-family: 'Fredoka One', sans-serif;
