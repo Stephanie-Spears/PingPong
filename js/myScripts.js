@@ -1,5 +1,6 @@
 var myArray = [];
 var num1;
+var mutatedArray = [];
 
 function getFormInput(num1) {
 
@@ -16,6 +17,9 @@ function getFormInput(num1) {
    }
    myArray = initializeArray(num1);
    alert("MY ARRAY:" + myArray);
+   mutateArrayFunction(myArray);
+   alert("MUTATED ARRAY: " + mutatedArray);
+
    boolRunCode = false;
  }
 }
@@ -24,8 +28,7 @@ var getInput = function() {
   num1 = prompt("How high do you want to go?");
  return num1;
 };
-// NOTE: check input is unnecessary with "required" and added min-max values inside html submit
-var checkInput = function(num1) {
+var checkInput = function(num1) { // NOTE: check input is unnecessary with "required" and added min-max values inside html submit
  if (isNaN(num1)) {
    alert("Must input numbers only");
    return false;
@@ -37,12 +40,28 @@ var checkInput = function(num1) {
 };
 var initializeArray = function (num1) {
  for (var i = 0; i < num1; i++) {
-   myArray.push(myArray);
-   myArray[i] = (i+1);
-   alert("initializing array: " + myArray[i] + "[" + i + "]");
- }
+   myArray.push(myArray[i]); // NOTE: check--if push is after statement below, it pushes an extra value into the array--but how is it pushing nothing into myArray[0]...shouldnt this statement be pushing a NaN into MyArray[0] if it's executing before the value-setting?
+   myArray[i] = i + 1;
 
+  //  alert("initializing array: " + myArray[i] + "[" + i + "]");
+ }
  return myArray;
+};
+var mutateArrayFunction = function(myArray) {
+  for (var i = 0; i < myArray.length; i++) {
+    if (myArray[i] % 15 === 0) {
+      mutatedArray.push("ping-pong");
+    }
+    else if (myArray[i] % 5 === 0) {
+      mutatedArray.push("pong");
+    }
+    else if (myArray[i] % 3 === 0) {
+      mutatedArray.push("ping");
+    }
+    else {
+      mutatedArray.push(myArray[i]);
+    }
+  }
 };
 
 
@@ -51,11 +70,10 @@ $(document).ready(function(){
     event.preventDefault();
     num1 = parseInt($("#input").val());
     getFormInput(num1);
+    // mutateArrayFunction(getFormInput(num1));
+    // $("#output").text(mutatedArray);
   });
 });
-
-
-
 
 
 // //<!-- Back End -->
