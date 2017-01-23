@@ -2,26 +2,26 @@
 
 function myControlStructure(){
   var boolRunCode = true;
-  var numValidate;
+  var validInput;
   var myArray = [];
-  var myMutatedArray = [];
+  // var myMutatedArray = [];
 
   var num1 = parseInt($("#userInput").val());
   while(boolRunCode === true)
   {
-    numValidate = checkInput(num1);
+    validInput = checkInput(num1);
 
-    while(numValidate !== true)
+    while(validInput !== true)
     {
       num1 = parseInt($("#userInput").val());
-      numValidate = checkInput(num1);
+      validInput = checkInput(num1);
     }
 
     myArray = initializeArray(num1);
-    myMutatedArray = mutateArray(myArray);
-
+    // myMutatedArray = mutateArray(myArray);
+    //
     alert("MY ARRAY: " + myArray);
-    alert("MY MUTATED ARRAY: " + myMutatedArray);
+    alert("MY MUTATED ARRAY: " + myMutatedArray);  
     boolRunCode = false;
   }
   displayArray(myMutatedArray);
@@ -83,10 +83,5 @@ $(document).ready(function(){
   $("form").submit(function(event){
     event.preventDefault();
     myControlStructure();
-
   });
-  // $("#resetButton").click(function(){
-  //   $("form").remove("#resultsPanel"); //changed from remove to reset
-  // });
-
 });

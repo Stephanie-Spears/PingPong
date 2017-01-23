@@ -1,13 +1,9 @@
 * {
   box-sizing: border-box;
   border-radius: 10px;
-  margin: 2em;
+  margin: 0em;
+  padding: 0em;
 }
-
-
-/** :hover {
-  border: 2px solid green;
-}*/
 
 body {
   font-family: 'Fredoka One', sans-serif;
@@ -15,7 +11,7 @@ body {
 }
 
 
-#pong1Img, #pong2Img, #pong3Img, #pong4Img, .displayWords{
+#pong1Img, #pong2Img, #pong3Img, #pong4Img, #tableTennis, .displayWords{
   display: none;
   margin: auto;
 }
