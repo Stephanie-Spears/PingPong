@@ -10,14 +10,14 @@
     <title>Ping-Pong</title>
   </head>
   <body>
-      <div class="jumbotron" id="top">
+      <div class="jumbotron" id="topDiv">
         <div class="box">
         <h1>Ping-Pong</h1>
-        <button id="play-btn" class="btn btn-success btn-lg" type="button">Play Now</button>
+        <button id="playButton" class="btn btn-success btn-lg" type="button">Play Now</button>
       </div>
     </div>
-    <div class="container clearfix" id="game">
-      <div class="section" id="rules">
+    <div class="container clearfix" id="gameContainer">
+      <div class="section" id="rulesDiv">
         <h2>RULES: </h2>
         <ul>
           <li>Numbers divisible by 3 are replaced with "ping"</li>
@@ -27,46 +27,37 @@
       </div> <!-- end rules div -->
       <div class="row">
         <div class="col-sm-3">
-          <h2 class="pingPong"><em>Oh!</em></h2>
+          <h2 class="displayWords"><em>Oh!</em></h2>
         </div>
         <div class="col-sm-6">
           <!-- <div class="box"> -->
-            <img class="img-responsive" id="pong1" src="img/pong1.jpg">
-            <img class="img-responsive" id="pong2" src="img/pong2.jpg">
-            <img class="img-responsive" id="pong3" src="img/pong3.jpg">
-            <img class="img-responsive" id="pong4" src="img/pong4.jpg">
+            <img class="img-responsive" id="pong1Img" src="img/pong1.jpg">
+            <img class="img-responsive" id="pong2Img" src="img/pong2.jpg">
+            <img class="img-responsive" id="pong3Img" src="img/pong3.jpg">
+            <img class="img-responsive" id="pong4Img" src="img/pong4.jpg">
           <!-- </div> -->
         </div>
         <div class="col-sm-3">
-          <h2 class="pingPong"><em>Grr!</em></h2>
+          <h2 class="displayWords"><em>Grr!</em></h2>
         </div>
       </div>
       <div class="section">
         <form>
-          <!-- <div class="hover-font">
-            <h3 class="font-effect-fire-animation">Want to Play?</h3>
-          </div> -->
-          <!-- <div class="form-group" id="inputForm">
-            <input class="form-control" id="input" type="number" min="1" max="100" placeholder="Enter a number between 1 and 100: " required>
-          </div> -->
-          <!-- <button class="btn btn-primary" type="submit" onclick="getFormInput()">Ping-pong!</button> -->
-          <label for="input">Enter a number: </label>
-          <input id="input" type="number">
-          <button class="btn btn-primary" type="submit" name="button">Ping-Pong Me!</button>
-
-
-
-
-          <!-- <button class="btn btn-danger" id="reset" type="reset" name="button">Reset</button> -->
+          <h3 class="font-effect-fire-animation">Want to Play?</h3>
+          <div class="form-group">
+            <input class="form-control" id="userInput" type="number" min="1" max="100" placeholder="Enter a number between 1 and 100: " required>
+          </div>
+          <button class="btn btn-primary" type="submit" name="button" id="submitButton">Ping-Pong Me!</button>
+          <button class="btn btn-danger" id="resetButton" type="reset" name="button">Reset</button>
         </form>
         <div class="results well">
-          <ul id="output">
+          <ul id="outputList">
           </ul>
         </div>
       </div>
     </div>
       <footer class="footer">
-        <div id="back-link">
+        <div id="backDiv">
           <a href="#top">back to top</a>
         </div>
         <p class="text-muted"><em>Copyright 2017 by Stephanie Spears</em></p>
