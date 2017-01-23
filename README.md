@@ -8,26 +8,26 @@
 
   _**This project was created for Epicodus to fulfill the following objectives:**_
 
-_Create a web application that takes a number from a user and returns a range of numbers from 1 to the chosen number with the following exceptions:
+_Create a web application that takes a number from a user and returns a range of numbers from 1 to the chosen number with the following exceptions:_
 
-Numbers divisible by 3 are replaced with "ping"
-Numbers divisible by 5 are replaced with "pong"
-Numbers divisible by 15 are replaced with "ping-pong"
-A user should be able to enter a new number and see new results over and over again.
+_Numbers divisible by 3 are replaced with "ping"_
+_Numbers divisible by 5 are replaced with "pong"_
+_Numbers divisible by 15 are replaced with "ping-pong"_
+_A user should be able to enter a new number and see new results over and over again._
 
-Break the program down into simple, individual behaviors with input/output examples. Begin with the simplest possible behavior. List these behaviors (also known as "specs" or "specifications") in the project's README.md file._
+_Break the program down into simple, individual behaviors with input/output examples. Begin with the simplest possible behavior. List these behaviors (also known as "specs" or "specifications") in the project's README.md file._
 
-_Your code will be reviewed for the following objectives:
+_Your code will be reviewed for the following objectives:_
 
-JavaScript business logic and user interface logic are separate.
-Variable names are descriptive and use lower camel case (e.g. myVariableExample).
-Code has proper indentation and spacing.
-Application works as expected.
-All previous objectives have been met.
-Logic is broken down into "plain English" specs, listed in README.
-Project is in a presentable, portfolio-quality state.
-Required functionality is in place by Friday deadline.
-Project demonstrates understanding of this week's concepts. If prompted, you are able to discuss your code with an instructor using correct terminology._
+_JavaScript business logic and user interface logic are separate._
+_Variable names are descriptive and use lower camel case (e.g. myVariableExample)._
+_Code has proper indentation and spacing._
+_Application works as expected._
+_All previous objectives have been met._
+_Logic is broken down into "plain English" specs, listed in README._
+_Project is in a presentable, portfolio-quality state._
+_Required functionality is in place by Friday deadline._
+_Project demonstrates understanding of this week's concepts. If prompted, you are able to discuss your code with an instructor using correct terminology._
 
 
 ## Setup/Installation Requirements
@@ -38,7 +38,6 @@ Project demonstrates understanding of this week's concepts. If prompted, you are
 
 
 ## Known Bugs
-
 __
 
 ## Support and contact details
