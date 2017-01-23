@@ -31,9 +31,21 @@ _**Your code will be reviewed for the following objectives:**_
 
 ## Specifications
 
+* Initializes an array up to a specific user-provided index
+  * _Example Input: 2_
+  * _Example Output: [1,2]_
+* Numbers divisible by 3 are replaced with "ping"
+  * _Example Input: 3_
+  * _Example Output: [1,2,ping]_
+* Numbers divisible by 5 are replaced with "pong"
+  * _Example Input: 5_
+  * _Example Output: [1,2,ping,4,pong]_
+* Numbers divisible by 15 are replaced with "ping-pong"
+  * _Example Input: 15_
+  * _Example Output: [1,2,ping,4,pong,ping,7,8,ping,pong,11,ping,13,14,ping-pong]_
+
 
 ## Setup/Installation Requirements
-
 
 * _Clone this repository_
 * _Open html page 'index.html' in browser_
