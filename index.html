@@ -2,7 +2,7 @@
 <html>
   <head>
     <meta charset="utf-8">
-    <link href="https://fonts.googleapis.com/css?family=Bungee+Shade|Fredoka+One|Creepster&effect=fire-animation" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Bungee+Shade|Fredoka+One|Macondo|Bungee+Outline&effect=fire-animation" rel="stylesheet">
     <link href="css/bootstrap.css" rel="stylesheet" type="text/css">
     <link href="css/myStyles.css" rel="stylesheet" type="text/css">
     <script src="js/jQuery.js"></script>
@@ -10,56 +10,68 @@
     <title>Ping-Pong</title>
   </head>
   <body>
+    <div class="container-fluid">
       <div class="jumbotron" id="topDiv">
-        <div class="box">
         <h1>Ping-Pong</h1>
-        <button id="playButton" class="btn btn-success btn-lg" type="button">Play Now</button>
+        <button id="playButton" class="btn btn-lg" type="button">Play Now</button>
       </div>
-    </div>
-    <div class="container clearfix" id="gameContainer">
-      <div class="section" id="rulesDiv">
-        <h2>RULES: </h2>
-        <ul>
-          <li>Numbers divisible by 3 are replaced with "ping"</li>
-          <li>Numbers divisible by 5 are replaced with "pong"</li>
-          <li>Numbers divisible by 15 are replaced with "ping-pong"</li>
-        </ul>
-      </div> <!-- end rules div -->
-      <div class="row">
-        <div class="col-sm-3">
-          <h2 class="displayWords"><em>Oh!</em></h2>
+
+      <div class="section" id="rulesSection">
+        <div class="row">
+          <div class="col-sm-12">
+            <h2>RULES:</h2>
+            <ol>
+              <li>Numbers divisible by 3 are replaced with "ping"</li>
+              <li>Numbers divisible by 5 are replaced with "pong"</li>
+              <li>Numbers divisible by 15 are replaced with "ping-pong"</li>
+            </ol>
+          </div>
         </div>
-        <div class="col-sm-6">
-          <div id="playerImages">
+      </div>
+
+
+        <div class="row">
+          <div class="col-sm-3">
+            <h2 class="displayWords"><em>Oh!</em></h2>
+          </div>
+          <div class="col-sm-6">
             <img class="img-responsive" id="pong1Img" src="img/pong1.jpg">
             <img class="img-responsive" id="pong2Img" src="img/pong2.jpg">
             <img class="img-responsive" id="pong3Img" src="img/pong3.jpg">
             <img class="img-responsive" id="pong4Img" src="img/pong4.jpg">
             <img class="img-responsive" id="tableTennis" src="img/tableTennis.jpg">
           </div>
+          <div class="col-sm-3">
+            <h2 class="displayWords"><em>Grr!</em></h2>
+          </div>
         </div>
-        <div class="col-sm-3">
-          <h2 class="displayWords"><em>Grr!</em></h2>
-        </div>
-      </div> <!-- end row div -->
-      <div class="section">
-        <form>
-          <h3 class="font-effect-fire-animation">Want to Play?</h3>
-          <div class="form-group">
-            <input class="form-control" id="userInput" type="number" min="1" max="100" placeholder="Enter a number between 1 and 100: " required>
-            <button class="btn btn-primary" type="submit" name="button" id="submitButton">Ping-Pong Me!</button>
-            <button class="btn btn-danger" id="resetButton" type="reset" name="button">Reset</button>
+
+
+      <div class="section" id="listSection">
+        <div class="row">
+          <div class="col-sm-4">
+            <h2>Want to Play?</h2>
+          </div>
+          <div class="col-sm-4">
+            <form>
+              <div class="form-group">
+                <input class="form-control" id="userInput" type="number" min="1" max="100" placeholder="Enter a number between 1 and 100: " required>
+                <button class="btn btn-primary" type="submit" name="button" id="submitButton">Ping-Pong Me!</button>
+                <button class="btn btn-danger" id="resetButton" type="reset" name="button">Reset</button>
+              </div> <!-- end form-group div-->
+            </form> <!-- end form div -->
+          </div>
+          <div class="col-sm-4">
             <div class="results well" id="resultsPanel">
               <ul id="outputList">
               </ul>
-            </div> <!-- end resultsPanel div -->
-          </div> <!-- end form-group div-->
-        </form> <!-- end form div -->
-      </div> <!-- end section class -->
-    </div> <!-- end container div -->
+            </div> <!-- end results well div -->
+          </div>
+        </div>
+      </div><!--end section div -->
       <footer class="footer">
         <div id="backDiv">
-          <a href="#top">back to top</a>
+          <a href="#topDiv">back to top</a>
         </div>
         <p class="text-muted"><em>Copyright 2017 by Stephanie Spears</em></p>
       </footer> <!--end footer-->

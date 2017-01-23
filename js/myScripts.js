@@ -68,23 +68,27 @@ function mutateArray(myArray){
 
 function displayArray(myMutatedArray){
   $("#outputList").html("");
+  $("html, body").animate({
+    scrollTop: $("#listSection").offset().top
+  }, "slow");
   if(myMutatedArray.length > 15){
-    $("h2").show().fadeIn(1000).fadeOut(1000);
+    $("displayWords").show().fadeIn(1000).fadeOut(1000);
     $("#pong1Img").show().fadeIn(1000).fadeOut(1000);
   }
   else if(myMutatedArray.length > 5){
-    $("h2").show().fadeIn(900).fadeOut(900);
-    $("#pong2Img").show().fadeIn(900).fadeOut(900);
+    $("displayWords").show().fadeIn(1000).fadeOut(1000);
+    $("#pong2Img").show().fadeIn(1000).fadeOut(1000);
   }
   else if(myMutatedArray.length > 3){
-    $("h2").show().fadeIn(800).fadeOut(800);
+    $("displayWords").show().fadeIn(1000).fadeOut(1000);
     $("#pong3Img").show().fadeIn(800).fadeOut(800);
   }
   else if(myMutatedArray.length > 0){
-    $("h2").show().fadeIn(700).fadeOut(700);
-    $("#pong4Img").show().fadeIn(700).fadeOut(700);
+    $("displayWords").show().fadeIn(1000).fadeOut(1000);
+    $("#pong4Img").show().fadeIn(1000).fadeOut(1000);
   }
   for(var i = 0; i < myMutatedArray.length; i++){
+
     $("#outputList").append("<li>" + myMutatedArray[i] + "</li>");
   }
 }
@@ -93,7 +97,7 @@ function displayArray(myMutatedArray){
 $(document).ready(function(){
   $("#playButton").click(function(){
     $("html, body").animate({
-      scrollTop: $("#gameContainer").offset().top
+      scrollTop: $("#rulesSection").offset().top
     }, "slow");
   });
   $("form").submit(function(event){

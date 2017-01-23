@@ -1,59 +1,32 @@
-* {
-  box-sizing: border-box;
-  border-radius: 10px;
-  margin: 0em;
-  padding: 0em;
-}
 
 body {
   font-family: 'Fredoka One', sans-serif;
   background-color: gray;
+  color: #ffffff;
+  text-align: center;
 }
 
-
-#pong1Img, #pong2Img, #pong3Img, #pong4Img, #tableTennis, .displayWords{
-  display: none;
-  margin: auto;
-}
-
-.box {
-  /*clear:right;*/
-    border-style: solid;
-    border-width: 1px;
-    display: block;
-    width: 100px;
-    height: 100px;
-    background-color: #0000FF;
-    -webkit-transition: width 2s, height 2s, background-color 2s, -webkit-transform 2s;
-    transition: width 2s, height 2s, background-color 2s, transform 2s;
-    border-radius: 10em;
-}
-
-.box:hover {
-  border-radius: 10em;
-    background-color: #FFCCCC;
-    width: 200px;
-    height: 200px;
-    -webkit-transform: rotate(320deg);
-    transform: rotate(320deg);
-}
-
-h1 {
+.jumbotron {
+  padding-top: 10em;
+  padding-bottom: 15em;
   font-family: 'Bungee Shade', sans-serif;
-  text-align: center;
   text-shadow: 5px 6px 10px #00FF00;
-  font-size: 5em;
+  transition: all 2s ease-in-out;
 }
 
-h2 {
-  color: white;
-  text-align: center;
-  font-size: 2em;
+.jumbotron:hover {
+  font-family: 'Bungee Outline', sans-serif;
+  text-shadow: 0 0 3px #FF0000, 0 0 5px #0000FF;
+  transform: scale(2, 2);
 }
 
-.hover-font :hover {
-  font-family: 'Creepster', sans-serif;
+#playButton {
+  font-family: 'Fredoka One', sans-serif;
+  text-shadow: 0 0 10px rgba(255,255,255,1) , 0 0 20px rgba(255,255,255,1) , 0 0 30px rgba(255,255,255,1) , 0 0 40px #00ffff , 0 0 70px #00ffff , 0 0 80px #00ffff , 0 0 100px #00ffff ;
+  border-radius: 3em;
+  opacity: 1;
 }
+
 
 img {
   display: block;
@@ -61,47 +34,31 @@ img {
   max-width: 500px;
 }
 
-a {
-  color: #ffffff;
-}
-
-a:hover {
-  color: blue;
-}
-
-.jumbotron {
-  color: #ffffff;
-  background-size: cover;
-}
-
-.container {
-  padding-bottom: 5em;
-}
-
 .section {
   background-color: rgba(255, 255, 255, 0.7);
   border-radius: 25px;
-  clear: left;
+  /*clear: left;*/
 }
 
-#play-btn {
-  display: block;
+#rulesSection {
+  margin-top: 10em;
+  font-family: 'Macondo', sans-serif;
+  font-size: 2em;
+}
+
+#rulesSection h2 {
+    font-family: 'Fredoka One', sans-serif;
+}
+
+#resultsPanel {
+  color: black;
+    text-shadow: 0 0 10px rgba(255,255,255,1) , 0 0 20px rgba(255,255,255,1) , 0 0 30px rgba(255,255,255,1) , 0 0 40px #00ffff , 0 0 70px #00ffff , 0 0 80px #00ffff , 0 0 100px #00ffff ;
+}
+
+#pong1Img, #pong2Img, #pong3Img, #pong4Img, #tableTennis, .displayWords{
+  display: none;
   margin: auto;
 }
-
-
-#rules {
-
-}
-
-
-#back-link {
-  /*padding-top: 2em;*/
-  text-align: center;
-}
-
-
-
 
 
 
