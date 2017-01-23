@@ -15,7 +15,7 @@ body {
 }
 
 
-#pong1, #pong2, #pong3, #pong4, .pingPong{
+#pong1Img, #pong2Img, #pong3Img, #pong4Img, .displayWords{
   display: none;
   margin: auto;
 }

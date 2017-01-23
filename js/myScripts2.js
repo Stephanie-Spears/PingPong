@@ -6,7 +6,7 @@ function myControlStructure(){
   var myArray = [];
   var myMutatedArray = [];
 
-  var num1 = parseInt($("#userInput").val()); 
+  var num1 = parseInt($("#userInput").val());
   while(boolRunCode === true)
   {
     numValidate = checkInput(num1);
@@ -19,13 +19,13 @@ function myControlStructure(){
 
     myArray = initializeArray(num1);
     myMutatedArray = mutateArray(myArray);
-    displayArray(myMutatedArray);
 
     alert("MY ARRAY: " + myArray);
     alert("MY MUTATED ARRAY: " + myMutatedArray);
     boolRunCode = false;
   }
-  return (myMutatedArray);
+  displayArray(myMutatedArray);
+  // return(myMutatedArray);
 }
 
 function checkInput(num1){
@@ -67,6 +67,7 @@ function mutateArray(myArray){
 }
 
 function displayArray(myMutatedArray){
+  $("#outputList").html("");
   for(var i = 0; i < myMutatedArray.length; i++){
     $("#outputList").append("<li>" + myMutatedArray[i] + "</li>");
   }
@@ -81,13 +82,11 @@ $(document).ready(function(){
   });
   $("form").submit(function(event){
     event.preventDefault();
-    // var num1 = parseInt($("#userInput").val());
-    // myControlStructure(num1);
     myControlStructure();
-  });
 
-  $("#resetButton").click(function(){
-    $("#outputList").reset(); //changed from remove to reset
   });
+  // $("#resetButton").click(function(){
+  //   $("form").remove("#resultsPanel"); //changed from remove to reset
+  // });
 
 });
