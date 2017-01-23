@@ -19,15 +19,17 @@ _Break the program down into simple, individual behaviors with input/output exam
 
 _**Your code will be reviewed for the following objectives:**_
 
-_JavaScript business logic and user interface logic are separate._
-_Variable names are descriptive and use lower camel case (e.g. myVariableExample)._
-_Code has proper indentation and spacing._
-_Application works as expected._
-_All previous objectives have been met._
-_Logic is broken down into "plain English" specs, listed in README._
-_Project is in a presentable, portfolio-quality state._
-_Required functionality is in place by Friday deadline._
-_Project demonstrates understanding of this week's concepts. If prompted, you are able to discuss your code with an instructor using correct terminology._
+* _JavaScript business logic and user interface logic are separate._
+* _Variable names are descriptive and use lower camel case (e.g. myVariableExample)._
+* _Code has proper indentation and spacing._
+* _Application works as expected._
+* _All previous objectives have been met._
+* _Logic is broken down into "plain English" specs, listed in README._
+* _Project is in a presentable, portfolio-quality state._
+* _Required functionality is in place by Friday deadline._
+* _Project demonstrates understanding of this week's concepts. If prompted, you are able to discuss your code with an instructor using correct terminology._
+
+## Specifications
 
 
 ## Setup/Installation Requirements
