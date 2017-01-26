@@ -20,8 +20,6 @@ function myControlStructure(){
     myArray = initializeArray(num1);
     myMutatedArray = mutateArray(myArray);
 
-    alert("MY ARRAY: " + myArray);
-    alert("MY MUTATED ARRAY: " + myMutatedArray);
     boolRunCode = false;
   }
   displayArray(myMutatedArray);

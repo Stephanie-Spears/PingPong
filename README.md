@@ -1,4 +1,4 @@
-# _Stephanie Spears' Ping Pong_
+# _Ping Pong_
 
 #### _Webpage for Epicodus (Week 3 Solo-Project), January 20th, 2017_
 
@@ -15,9 +15,7 @@ _Create a web application that takes a number from a user and returns a range of
 * _*Numbers divisible by 15 are replaced with "ping-pong"*_
 * _*A user should be able to enter a new number and see new results over and over again.*_
 
-_Break the program down into simple, individual behaviors with input/output examples. Begin with the simplest possible behavior. List these behaviors (also known as "specs" or "specifications") in the project's README.md file._
-
-_**Your code will be reviewed for the following objectives:**_
+_**Additional bjectives:**_
 
 * _JavaScript business logic and user interface logic are separate._
 * _Variable names are descriptive and use lower camel case (e.g. myVariableExample)._
@@ -47,28 +45,26 @@ _**Your code will be reviewed for the following objectives:**_
 
 ## Setup/Installation Requirements
 
-* _Clone this repository_
-* _Open html page 'index.html' in browser_
+* `git clone https://github.com/Stephanie-Spears/pingPong.git`
+* _Open index.html in a web browser and follow prompts._
 
+## GitHub Pages link
 
-## Known Bugs
-__
+_See this application on GitHub Pages_ [here](https://stephanie-spears.github.io/PingPong)
 
 ## Support and contact details
 
-_Email Stephanie.Spears1@gmail.com for support_
+_Please feel free to contact stephanie.spears1@gmail.com for support._
 
 ## Technologies Used
 
-_HTML_
-_CSS_
-_BOOTSTRAP_
-_GIT_
-_GITHUB PAGES_
-_jQuery_
+* _Animate.css_
+* _JavaScript_
+* _jQuery_
+* _BootStrap_
 
 ### License
 
-*This software is available under the MIT License*
+*This software is licensed under the MIT license.*
 
-Copyright (c) 2017 **Stephanie Spears**
+Copyright (c) 2017 **_Stephanie Spears_**
